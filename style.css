@@ -1,1 +1,46 @@
+.event-header {
+    background-color: #3d2922a3; /* Mörk brun färg */
+    padding: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
 
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: end; /*Flyttar menyn åt slutet  */
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ed1d63e2;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration: none; /*tar bort understreck */
+}
+
+
+
+.menu li {
+    margin-right: 5px;
+    text-align: right;
+    text-shadow: 2px 2px 8px rgb(rgba(255, 0, 0, 0.352), rgb(255, 48, 176), rgb(245, 152, 203)); 
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4efe62f;
+}
+
+
+.event-footer {
+    background-color: #30201b;
+    padding: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
