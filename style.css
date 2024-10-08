@@ -1,13 +1,15 @@
 .event-header {
     background-color: #3d2922a3; /* Mörk brun färg */
-    padding: 60px;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
 
-.img-pic {
-    text-align: center;
-    padding: 60px;
+.img-pic img {
+    height: auto;
+    width: 100%;
+    display: block;
 }
 
 
@@ -20,7 +22,7 @@
 .menu a {
     display: block;
     padding: 10px 20px;
-    background-color: #ed1d63e2;
+    background-color: #ec99b5e2;
     color: rgb(255, 255, 255);
     border-radius: 5px;
     text-decoration: none; /*tar bort understreck */
