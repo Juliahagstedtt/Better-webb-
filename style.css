@@ -6,10 +6,16 @@
     color: rgb(0, 0, 0);
 }
 
+.title-head {
+    text-align: center;
+    color: palevioletred
+}
+
 .img-pic img {
     height: auto;
     width: 100%;
     display: block;
+    filter: blur(2px);
 }
 
 
@@ -41,7 +47,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4efe62f;
+    background-color: #9d8b6ac5;
 }
 
 
@@ -51,4 +57,17 @@ body {
     text-align: center;
     color: rgb(0, 0, 0);
     border-radius: 5px;
+}
+
+
+.meta {
+
+
+
+
+
+
+
+
+
 }
