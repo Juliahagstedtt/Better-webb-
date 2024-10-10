@@ -1,14 +1,16 @@
 .event-header {
     display: flex;
     background-color: #302103;
+    background: linear-gradient(90deg, #302103, #917b6a);
     justify-content: space-between;
     padding: 5px 5px;
     text-align: center;
-    color: rgba(249, 75, 130, 0.703);
+    color: rgba(249, 75, 139, 0.703);
     box-shadow: #30201b;
 }
 
 .logo img {
+    display: block;
     width: 100px;
     height: auto;
     margin-right: 100%;
@@ -28,6 +30,33 @@
     height: 300px; 
     position: relative; 
 }
+
+.info {
+    border: 2px; #73fff6;
+    padding: 15px; 
+    border-radius: 5px;
+    background-color: rgb(224, 213, 184);
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    max-width: 500px;
+    margin: 5px;
+   text-shadow: #30201b;
+}
+
+.info h1 {
+  font-size: 40px;  
+  color: #ffffffc1;
+
+}
+
+
+.info button {
+    color: rgb(78, 72, 76);
+    background-color: #e6d0c8c1;
+    text-decoration: none;
+
+}
+
+
 
 .nav h1 {
     color: gainsboro;
@@ -49,10 +78,10 @@
 }
 
 .section-1 h2 {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    color: rgb(241, 113, 113); 
+    color: rgb(239, 216, 179); 
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
     font-size: 36px; 
     text-align: left;
@@ -70,7 +99,7 @@
 .menu a {
     display: block;
     padding: 10px 13px;
-    background-color: #7a6453c1;
+    background-color: #a98d78c1;
     flex: auto;
     text-shadow: #73fff6;
     color: rgb(255, 255, 255);
@@ -83,15 +112,16 @@
     text-align: right;
     text-shadow: 2px 2px 8px rgb(rgba(255, 0, 0, 0.352), rgb(255, 48, 176), rgb(245, 152, 203));
 
-
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b08a66;
+    color: white;
+    background-color: #6c5a45;
 }
+
 
 .event-footer {
     background-color: #302103;
@@ -99,6 +129,12 @@ body {
     text-align: center;
     color: rgb(0, 0, 0);
     border-radius: 5px;
+    display: flex;
+    background: linear-gradient(90deg, #302103, #917b6a);
+    padding: 5px 5px;
+    text-align: center;
+    color: rgba(75, 220, 249, 0.703);
+    box-shadow: #30201b;
 }
 
   @media (max-width: 768px) {
