@@ -39,10 +39,29 @@
 <main>
     <form action="bokning" method="post">
      <h2>Bokning:</h2>
-     <label for="name">Namn:</label><br>
-     <input type="text" id="name" name="name" required><br>
+        <label for="name">Namn: *</label><br>
+        <input type="text" id="name" name="name" required><br>
 
+        <label for="birthday">Födelsedatum: *</label><br>
+        <input type="number" id="birthday" name="birthday" required><br>
 
+        <label for="adress">Adress: *</label><br>
+        <input type="text" id="adress" name="adress" required><br>
+
+        <label for="number">Mobil nummer: *</label><br>
+        <input type="number" id="number" name="number" required><br>        
+        
+        <label for="e-mail">Email: *</label><br>
+        <input type="email" id="e-mail" name="e-mail" required><br>
+
+        <div class="container">
+            <div class="preference-box">    
+                <label for="preference">Mat preference: </label><br>
+                <br>Kött<input type="checkbox" id="Kött" name="options[]" value="Kött">kött<br>
+                <br>Fisk<input type="checkbox" id="Fisk" name="options[]" value="Fisk">Fisk<br>
+                <br>Vegetariskt<input type="checkbox" id="Vegetariskt" name="options[]" value="Vegetariskt">Vegetariskt<br>
+            </div>
+        </div>
     </form>
 
 </main>
@@ -52,7 +71,7 @@
 
 
 
-    
+
 </footer>
 
 
