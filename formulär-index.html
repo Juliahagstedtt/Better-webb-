@@ -48,21 +48,33 @@
         <label for="adress">Adress: *</label><br>
         <input type="text" id="adress" name="adress" required><br>
 
-        <label for="number">Mobil nummer: *</label><br>
+        <label for="number">Mobil: *</label><br>
         <input type="number" id="number" name="number" required><br>        
         
         <label for="e-mail">Email: *</label><br>
         <input type="email" id="e-mail" name="e-mail" required><br>
+        <br>
 
+
+        <br>
         <div class="container">
             <div class="preference-box">    
-                <label for="preference">Mat preference: </label><br>
-                <br>Kött<input type="checkbox" id="Kött" name="options[]" value="Kött">kött<br>
-                <br>Fisk<input type="checkbox" id="Fisk" name="options[]" value="Fisk">Fisk<br>
-                <br>Vegetariskt<input type="checkbox" id="Vegetariskt" name="options[]" value="Vegetariskt">Vegetariskt<br>
+                <label for="preference">Val av måltid: </label><br>
+                <input type="checkbox" id="Kött" name="options[]" value="Kött">kött<br>
+                <input type="checkbox" id="Fisk" name="options[]" value="Fisk">Fisk<br>
+                <input type="checkbox" id="Vegetariskt" name="options[]" value="Vegetariskt">Vegetariskt<br>
             </div>
         </div>
-    </form>
+        <br>
+        <div class="allergies-box">
+            <label for="allergies">Önskemål och allergis: </label><br>
+            <textarea id="allergies" name="allergis" rows="4" cols="50" placeholder="Skriv allergener här t.ex spannmål.."></textarea> <br>
+        </div>
+
+
+
+
+</form>
 
 </main>
 
