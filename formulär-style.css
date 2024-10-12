@@ -68,9 +68,24 @@ body {
 
 }
 
+.days-box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #b4a5a5c1;
+    background-color: #fdfcfbc1;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(218, 78, 122);
+}
 
 .preference-box {
-    
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #b4a5a5c1;
+    background-color: #fdfcfbc1;
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(218, 78, 122);
 }
 
 
