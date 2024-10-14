@@ -162,7 +162,26 @@ body {
 }   
 
 
-
+ .seminarie .section-a,
+ .seminarie .section-b,
+ .seminarie .section-c,
+ .seminarie .section-d,
+ .seminarie .section-e,
+ .seminarie .section-f,
+ .seminarie .section-g,
+ .seminarie .section-h,
+ .seminarie .section-i,
+ .seminarie .section-j
+ {
+    color: #111010;
+    width: 300px;
+    height: 200px;
+    border: 2px solid grey;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: #f2f0e2;
+}
 
 
 
