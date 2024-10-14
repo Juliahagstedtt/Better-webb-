@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bokning </title>
     <link rel="stylesheet" href="formulär-style.css">
+    <link href="submit">
 </head>
 
 <body>
@@ -57,21 +58,27 @@
         <label for="e-mail">Email: *</label><br>
         <input type="email" id="e-mail" name="e-mail" required><br>
 
+        <div class="submit">
+            <button onclick="nästa-steg">
+              Fortsätt
+            </button>
+          </div>
+          
+
         <br>
+    </form>
         
-        <div class="days-box">
-            <h2>Anmäl dig för en eller flera dagar:</h2>
-            <label for="days">18 - 20 Oktober:</label><br>
-            <br>
-            <input type="checkbox" id="18 Oktober" name="options[]" value="18 Oktober" required> 18 Okt<br>
-            <input type="checkbox" id="19 Oktober" name="options[]" value="19 Oktober" required> 19 Okt<br>
-            <input type="checkbox" id="20 Oktober" name="options[]" value="20 Oktober" readonly> 20 Okt<br>
-        </div>
-
-
-        
-        <div class="container">
+    <section id="nästa-steg">
+        <section class="form-section">
             <div class="preference-box">    
+                <h2>Anmäl dig för en eller flera dagar:</h2>
+                <label for="days">18 - 20 Oktober:</label><br>
+                <br>
+                <input type="checkbox" id="18 Oktober" name="options[]" value="18 Oktober" required> 18 Okt<br>
+                <input type="checkbox" id="19 Oktober" name="options[]" value="19 Oktober" required> 19 Okt<br>
+                <input type="checkbox" id="20 Oktober" name="options[]" value="20 Oktober" readonly> 20 Okt<br>
+                
+                <br>
                 <h2>Måltids alternativ:</h2>
                 <label for="preference">Val av måltid: </label><br>
                 <br><input type="checkbox" id="Kött" name="options[]" value="Kött">kött<br>
@@ -79,15 +86,18 @@
                 <input type="checkbox" id="Vegetariskt" name="options[]" value="Vegetariskt">Vegetariskt<br>
                 <br>
                 <label for="allergies">Önskemål och allergis: </label><br>
-                <textarea id="allergies" name="allergis" rows="4" cols="50" placeholder="Skriv allergener här t.ex spannmål.."></textarea> <br>
+                <br><textarea id="allergies" name="allergis" rows="4" cols="50" placeholder="Skriv allergener här t.ex spannmål.."></textarea> <br>
+                <div class="submit">
+                  <a href="korg-index.html" class="button-link">Fortsätt</a>
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="allergies-box">
+        </section>
+</section>
+
  </div>
+</div>
 
 
-</form>
 
 </main>
 

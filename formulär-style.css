@@ -64,26 +64,34 @@
 
 
 body {
-    background-color: #d7d1ccc1;
+    background-color: #b8987ec1;
     
 }
 
-.days-box {
-    margin-top: 20px;
+.days-box, .preference-box {
+    margin-top: 30px;
     padding: 10px;
     border: 2px solid #b4a5a5c1;
-    background-color: #fdfcfbc1;
-    width: 40%;
+    background-color: #ffffff;
+    width: 30%;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(218, 78, 122);
+    box-shadow: 2px 2px 5px rgb(116, 96, 102);
 }
 
-.preference-box {
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 20px;
-    padding: 10px;
-    border: 2px solid #b4a5a5c1;
-    background-color: #fdfcfbc1;
-    width: 40%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(218, 78, 122);
+    gap: 20px;
+}
+
+.button-link {
+    margin: 400px;
+    padding: 2px;
+    border: 2px solid rgb(125, 83, 46);
+    color: #ffffff;
+    background-color: #7c5f37;
+    text-decoration: none;
+    border-radius: 10px;
 }
