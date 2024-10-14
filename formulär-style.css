@@ -65,7 +65,7 @@
 
 body {
     background-color: #d7d1ccc1;
-
+    
 }
 
 .days-box {
@@ -86,10 +86,4 @@ body {
     width: 40%;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(218, 78, 122);
-}
-
-
-.checkbox {
-
-
 }
