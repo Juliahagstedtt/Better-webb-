@@ -122,20 +122,41 @@ body {
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.rubrik h1 {
-    color: #866e6e;
-    padding: 4px 4px 5px;
-    text-align: center;
-    width: 90%;
-    font-size: 50px;
-    text-shadow: 3px 3px 6px rgb(255, 252, 253);
-    margin: 100px;
-
+.program {
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+    flex-direction: row;
 }
 
+.section-q {
+    width: 500px;
+    top: 30%;
+    left: 100%;
+    background-color: #534d4db5;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.rubrik h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
 .Schema h2 {
-    font-size: 20px;
+    font-size: 27px;
     color: rgb(255, 255, 255);
+}
+
+.Schema u {
+    color: #000000;
+    text-shadow: 2px 2px 4px solid white;
+    font-size: 18px;
 }
 
 .Schema {
@@ -150,9 +171,9 @@ body {
  .Schema .Dag-3
  {
     color: rgb(255, 249, 249);
-    width: 300px;
-    height: 220px;
-    background-color: #e0d3c0;
+    width: 350px;
+    height: 250px;
+    background-color: #7f64899a;
     border: 2px solid rgb(107, 102, 102);
     padding: 20px;
     margin: 50px;
@@ -160,7 +181,6 @@ body {
     text-shadow: 1px 1px 3px #30201b;
     box-shadow: 2px 2px 5px#f6f5f4c1;
 }   
-
 
  .seminarie .section-a,
  .seminarie .section-b,
@@ -172,17 +192,78 @@ body {
  .seminarie .section-h,
  .seminarie .section-i,
  .seminarie .section-j
+
  {
+    margin-bottom: 100px;
     color: #111010;
     width: 300px;
-    height: 200px;
+    height: auto;
     border: 2px solid grey;
     padding: 20px;
     margin: 30px;
     border-radius: 10px;
-    background-color: #f2f0e2;
+    background-color: #ff83ea;
 }
 
+.seminarie, .pic-1 img
+.seminarie, .pic-2 img
+.seminarie, .pic-3 img
+.seminarie, .pic-4 img 
+.seminarie, .pic-5 img 
+.seminarie, .pic-6 img
+.seminarie, .pic-7 img 
+.seminarie, .pic-8 img
+.seminarie, .pic-9 img
+.seminarie, .pic-10 img {
+    width: 150px;
+    top:    20px;
+    height: 100px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.seminarie img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+body {
+    color: #111010;
+    background-color: #dedbd5;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.program-footer {
+    margin-top: 50px;
+    background-color: #302103;
+    padding: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    background: linear-gradient(90deg, #302103, #917b6a);
+    padding: 5px 5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.703);
+    box-shadow: #30201b;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.program-footer {
+    z-index: 10; /* Justera efter behov */
+    position: relative; /* Gör det möjligt att använda z-index */
+}
 
 
 @media (max-width: 768px) {
@@ -198,5 +279,8 @@ body {
     }
 
 
-
+    .program-footer {
+        padding: 20px 10px;
+    }
+    
 }
