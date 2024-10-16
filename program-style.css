@@ -113,40 +113,44 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: #111010;
+    background-color: #dedbd5;
+    height: 100%;
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
-    background-color: #7b705f;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .program {
     width: 700px;
-    margin: 20px;
-    padding: 20px;
+    margin: 30px;
+    padding: 30px;
     flex-direction: row;
 }
 
 .section-q {
-    width: 500px;
-    top: 30%;
-    left: 100%;
-    background-color: #534d4db5;
+    width: 700px;
+    top: 100%;
+    left: 10%;
+    background-color: #392106b3;
     border-radius: 10px;
     padding: 30px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .rubrik h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
     color: white;
     text-align: center;
 }
 
-
+/* Schema */
 
 .Schema h2 {
     font-size: 27px;
@@ -154,7 +158,7 @@ body {
 }
 
 .Schema u {
-    color: #000000;
+    color: #5c0f0f;
     text-shadow: 2px 2px 4px solid white;
     font-size: 18px;
 }
@@ -173,12 +177,11 @@ body {
     color: rgb(255, 249, 249);
     width: 350px;
     height: 250px;
-    background-color: #7f64899a;
+    background-color: #d9cab6b7;
     border: 2px solid rgb(107, 102, 102);
     padding: 20px;
     margin: 50px;
     border-radius: 5px;
-    text-shadow: 1px 1px 3px #30201b;
     box-shadow: 2px 2px 5px#f6f5f4c1;
 }   
 
@@ -202,7 +205,7 @@ body {
     padding: 20px;
     margin: 30px;
     border-radius: 10px;
-    background-color: #ff83ea;
+    background-color: #e2d5e0;
 }
 
 .seminarie, .pic-1 img
@@ -220,6 +223,7 @@ body {
     height: 100px;
     padding: 20px;
     margin: 30px;
+    margin-bottom: auto;
 }
 
 .seminarie img {
@@ -227,21 +231,15 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-
-}
-
-body {
-    color: #111010;
-    background-color: #dedbd5;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 
 
-.program-footer {
-    margin-top: 50px;
+
+/*
+    .program-footer {
+    position: absolute;
+    margin-top: 50px; 
     background-color: #302103;
     padding: 40px;
     text-align: center;
@@ -249,21 +247,26 @@ body {
     border-radius: 5px;
     display: flex;
     background: linear-gradient(90deg, #302103, #917b6a);
-    padding: 5px 5px;
+    padding: 5px 5px; 
     text-align: center;
     color: rgba(255, 255, 255, 0.703);
     box-shadow: #30201b;
     height: auto;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
-    
-}
+    justify-content: flex-end;}
 
-.program-footer {
+    .program-footer {
     z-index: 10; /* Justera efter behov */
-    position: relative; /* Gör det möjligt att använda z-index */
-}
+    position: relative; /* Gör det möjligt att använda z-index 
+    } */
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
