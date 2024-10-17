@@ -4,18 +4,20 @@ header {
     background-color: #c2bfba;
     background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
     justify-content: space-between;
-    padding: 5px 5px;
+    padding: 10px 0;
     text-align: center;
     color: rgba(249, 75, 139, 0.703);
-    box-shadow: #30201b;
+    box-shadow: 2px 2px 5px #30201b; 
 }
 
 /* Logo */
 .logo img {
     display: block;
-    width: 100px;
+    width: auto;
     height: auto;
     margin-right: 100%;
+    max-width: 100px;
+    margin: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(106, 78, 78);
 }
@@ -54,8 +56,8 @@ header {
 
 /* Välomst rubriken */
 .text-overlay {
-    width: 700px;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 700px;
     margin-left: 300px;
     top: 50%;
     left: 50%;
@@ -65,8 +67,10 @@ header {
     z-index: 2;
     text-align: center;
     align-content: center;
-    margin: 0;
+    margin: 0 auto;
+
 }
+ 
 
 .text-overlay h2 {
     font-size: 3.5rem;
@@ -79,7 +83,7 @@ header {
 .background-pic {
     position: relative;
     width: 100%;
-    height: auto;
+    min-height: 400px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -94,22 +98,18 @@ header {
     margin: 0 auto; /* Centrerar bilden */
     height: auto;
     filter: blur(5px);
-
-    max-width: 100%; /* Gör så att bilden skalas ned om den är för stor */
-    height: auto; /* Behåll bildens proportioner */
-    display: block; /* För att förhindra extra mellanrum runt bilden */
-    margin: 0 auto; /* Centrerar bilden om det behövs */
+    max-width: 100%; /* bilden skalas om för stor */
 }
 
 /* Information och sånt */
 .info {
-    position: relative; /* Ändra till relative så att den inte överlappar andra element */
-    margin: 20px auto; /* Ge utrymme ovan och nedan */
+    position: relative;
+    margin: 20px auto; 
     padding: 20px;
     transform:translate(-50%);
     z-index: 10;
     width: 90%;
-    max-width: 500px;
+    max-width: 400px;
     background-color: #d7d4d3a7;
     border-radius: 10px;
 }
@@ -121,8 +121,6 @@ header {
     text-shadow: 2px 2px 5px rgb(69, 66, 66);
     
 }
-
-
 
 
 .info button {
@@ -151,14 +149,13 @@ body {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
     background-color: #7b6262;
-    text-shadow: #9a9a99;
-    display: flex;
-    flex-direction: column; /* Staplar elemenent, råkade ta bort den och allt flöt huller om buller */
-    min-height: 100vh; /* Gör så att body fyller hela höjden av viewport */
+    text-shadow: 1px 1px 3px #9a9a99;   
+    flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
+    min-height: 100vh; 
 }
 
 main {
-    flex: 1; /* Gör så att main tar upp allt tillgängligt utrymme */
+    flex: 1;
 }
 
 footer {
@@ -167,28 +164,18 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .event-footer {
-    background-color: #000000; /* Se till att detta stämmer överens med footer */
+    background-color: #000000; 
     color: rgb(212, 210, 210);
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px; /* Lägg till lite utrymme ovanför footern */
+    margin-top: 20px; /* Utrymme över footern */
     border-radius: 5px;
-    max-width: 2000px; /* Detta verkar onödigt stort, överväg att minska */
-    width: 100%; /* Se till att den sträcker sig över hela bredden */
-}
-
-
-.footer-text {
-    text-align: center;
-    z-index: 2;
-}
-
-
-.image-section {
-    margin-bottom: 20px; /* Justera avståndet efter behov */
+    max-width: 2000px; 
 }
 
 
@@ -214,9 +201,9 @@ footer {
     }
 
     .info {
-        width: 80%; /* Justera bredden för mindre enheter */
-        top: 50%; /* Centrera vertikalt */
-        left: 50%; /* Centrera horisontellt */
+        width: 80%; 
+        top: 50%; 
+        left: 50%; 
     }
 
     .event-footer {
@@ -226,35 +213,39 @@ footer {
 
 @media (max-width: 480px) {
     .text-overlay h2 {
-        font-size: 1.5rem; /* Minska storlek ytterligare för mindre enheter */
+        font-size: 1.5rem; 
     }
 
     .info h2 {
-        font-size: 1.8rem; /* Justera för lägre skärmstorlekar */
+        font-size: 1.8rem; 
     }
 
     .info {
-        width: 95%; /* Gör den ännu bredare för små skärmar */
+        width: 95%; 
         font-size: 1rem;
     }
 
+    .menu {
+        gap: 5px;
+    }
+
     .menu a {
-        padding: 8px;
-        font-size: 1rem; /* Minska textstorlek för meny */
+        padding: 5px;
+        font-size: 0.8rem; /* Minska textstorleken på små skärmar */
     }
 }
 
 @media (max-width: 300px) {
     .text-overlay {
-        font-size: 1.2rem; /* Minska textstorlek ytterligare för små skärmar */
+        font-size: 1.2rem; /* Textstorlek för små skärmar */
         padding: 5px; /* Minska padding */
     }
 
     .info {
-        font-size: 1rem; /* Justera textstorlek för små skärmar */
+        font-size: 1rem; 
     }
 
     .menu a {
-        padding: 5px; /* Minska padding ytterligare */
+        padding: 5px; 
     }
 }
