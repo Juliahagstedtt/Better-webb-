@@ -39,39 +39,40 @@ header {
     border-radius: 2px;
     text-decoration: none; /*tar bort understreck */
     cursor: pointer;
+    transition: background-color 0.4s ease;
 }
-/*Strand bilden*/
-.image-container {
-    position:static;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
 
+.menu a:hover {
+    background-color: #e9e1e1;
 
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    filter: blur(2px);
+.menu a:active {
+    background-color: #a66f6f;
 }
+
 
 /* Välomst rubriken */
 .text-overlay {
-    position: absolute;
-    width: 370px;
-    top: 20%;
-    left: 35%;
-    background-color: #d7d4d3d4;
+    width: 700px;
+    max-width: 1000px;
+    margin-left: 300px;
+    top: 50%;
+    left: 50%;
+    background-color: #d7d4d30a;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     z-index: 2;
-
+    text-align: center;
+    align-content: center;
+    margin: 0;
 }
 
 .text-overlay h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px plum;
+    text-shadow: 1px 1px 3px #000000;
 }
 
 /* Bakgrunds bilden */
@@ -85,87 +86,100 @@ header {
 }
 
 .background-pic img {
-    position: static;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-
-    display: block;
-    margin: 0 auto; /* Centrerar bilden */
+    position: relative;
     width: 100%;
     height: auto;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto; /* Centrerar bilden */
+    height: auto;
     filter: blur(5px);
+
+    max-width: 100%; /* Gör så att bilden skalas ned om den är för stor */
+    height: auto; /* Behåll bildens proportioner */
+    display: block; /* För att förhindra extra mellanrum runt bilden */
+    margin: 0 auto; /* Centrerar bilden om det behövs */
 }
 
 /* Information och sånt */
 .info {
-    position: absolute;
-    top: 100%;
-    left: 25%;
-    margin: 2px;
+    position: relative; /* Ändra till relative så att den inte överlappar andra element */
+    margin: 20px auto; /* Ge utrymme ovan och nedan */
     padding: 20px;
-    z-index: 2;
-    width: 50%;
+    transform:translate(-50%);
+    z-index: 10;
+    width: 90%;
+    max-width: 500px;
     background-color: #d7d4d3a7;
     border-radius: 10px;
-
 }
 
 .info h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #ffffff;
+    text-shadow: 2px 2px 5px rgb(69, 66, 66);
     
-}-----
-
-
-
-
-.info h1 {
-    position: absolute;
-    font-size: 100px;  
-    color: #fff9f9;
-    text-shadow: 2px 2px 5px #7b6262;
 }
+
+
 
 
 .info button {
-    color: rgb(107, 105, 107);
-    background-color: #ffffff;
-    text-decoration: none;
     border-radius: 2px;
     cursor: pointer;
+    background-color: #fffbf875;
+    box-shadow: 2px 2px 5px #a89999;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    text-decoration: none; /*tar bort understreck */
+    transition: background-color 0.4s ease;
+}
+
+.info a:hover {
+    background-color: #e9e1e1;
 
 }
 
-
-
-
-
-
+.info a:active {
+    background-color: #a66f6f;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
     background-color: #7b6262;
     text-shadow: #9a9a99;
+    display: flex;
+    flex-direction: column; /* Staplar elemenent, råkade ta bort den och allt flöt huller om buller */
+    min-height: 100vh; /* Gör så att body fyller hela höjden av viewport */
 }
 
+main {
+    flex: 1; /* Gör så att main tar upp allt tillgängligt utrymme */
+}
 
 footer {
     background-color: #000000;
     color: rgb(212, 210, 210);
     text-align: center;
     padding: 20px 0;
+    margin-top: 20px;
 }
 
 .event-footer {
-    margin: 0 auto;
-    height: auto;
+    background-color: #000000; /* Se till att detta stämmer överens med footer */
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Lägg till lite utrymme ovanför footern */
     border-radius: 5px;
-    max-width: 2000px;
+    max-width: 2000px; /* Detta verkar onödigt stort, överväg att minska */
+    width: 100%; /* Se till att den sträcker sig över hela bredden */
 }
+
 
 .footer-text {
     text-align: center;
@@ -173,26 +187,16 @@ footer {
 }
 
 
-  @media (max-width: 768px) {
-    .event-header {
+.image-section {
+    margin-bottom: 20px; /* Justera avståndet efter behov */
+}
+
+
+/* Media queries för responsiv design */
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
         align-items: center;
-
-    }
-
-  .text-overlay {
-
-    font-size: 1.8rem;
-  }
-
-
-    .event-footer {
-    font-size: 1rem;
-
-    }
-
-    .img-pic {
-        
     }
 
     .menu {
@@ -200,30 +204,57 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 5px;
+    }
+
+    .text-overlay {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .info {
+        width: 80%; /* Justera bredden för mindre enheter */
+        top: 50%; /* Centrera vertikalt */
+        left: 50%; /* Centrera horisontellt */
+    }
+
+    .event-footer {
+        font-size: 1rem;
+    }
 }
 
+@media (max-width: 480px) {
+    .text-overlay h2 {
+        font-size: 1.5rem; /* Minska storlek ytterligare för mindre enheter */
+    }
+
+    .info h2 {
+        font-size: 1.8rem; /* Justera för lägre skärmstorlekar */
+    }
+
+    .info {
+        width: 95%; /* Gör den ännu bredare för små skärmar */
+        font-size: 1rem;
+    }
+
     .menu a {
-        flex: none;
-        width: 100%;
-        text-align: center;
+        padding: 8px;
+        font-size: 1rem; /* Minska textstorlek för meny */
+    }
+}
 
+@media (max-width: 300px) {
+    .text-overlay {
+        font-size: 1.2rem; /* Minska textstorlek ytterligare för små skärmar */
+        padding: 5px; /* Minska padding */
     }
 
-    .header-pic {
-
-
+    .info {
+        font-size: 1rem; /* Justera textstorlek för små skärmar */
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  }
+    .menu a {
+        padding: 5px; /* Minska padding ytterligare */
+    }
+}
