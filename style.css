@@ -1,24 +1,25 @@
-/* Header */
-.event-header {
+/* Header*/
+header {
     display: flex;
-    background-color: #302103;
-    background: linear-gradient(90deg, #302103, #917b6a);
+    background-color: #c2bfba;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
     justify-content: space-between;
     padding: 5px 5px;
     text-align: center;
     color: rgba(249, 75, 139, 0.703);
     box-shadow: #30201b;
-    cursor: pointer;
 }
 
+/* Logo */
 .logo img {
     display: block;
     width: 100px;
     height: auto;
     margin-right: 100%;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(106, 78, 78);
 }
-
+ /* Meny*/
 .menu {
     display: flex;
     list-style: none;
@@ -31,15 +32,15 @@
 .menu a {
     display: block;
     padding: 10px 13px;
-    background-color: #a98d78;
+    background-color: #d2bbaac1;
     flex: auto;
-    text-shadow: 2px 2px 4px solid #a7929a;
+    box-shadow: 2px 2px 5px #b28686;
     color: rgb(255, 255, 255);
-    border-radius: 6px;
+    border-radius: 2px;
     text-decoration: none; /*tar bort understreck */
     cursor: pointer;
 }
-
+/*Strand bilden*/
 .image-container {
     position:static;
     width: 100%;
@@ -52,16 +53,19 @@
 .image-container img {
     width: 100%;
     height: auto;
+    filter: blur(2px);
 }
 
+/* Välomst rubriken */
 .text-overlay {
     position: absolute;
-    width: 400px;
+    width: 370px;
     top: 20%;
-    left: 40%;
-    background-color: #d7d4d3a7;
+    left: 35%;
+    background-color: #d7d4d3d4;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
+    z-index: 2;
 
 }
 
@@ -70,25 +74,58 @@
     margin-bottom: 10px;
 }
 
-
-
-
-
-.info {
-    border: 2px solid #474747;
-    padding: 20px; 
-    border-radius: 5px;
-    background-color: rgba(53, 45, 45, 0.119);
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-    max-width: 500px;
-    margin: 5px;
-    text-shadow: 2px 2px 5px #9a9a99;
+/* Bakgrunds bilden */
+.background-pic {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
-.info h1 {
-  font-size: 50px;  
-  color: #000000;
+.background-pic img {
+    position: static;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 
+    display: block;
+    margin: 0 auto; /* Centrerar bilden */
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+}
+
+/* Information och sånt */
+.info {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    margin: 2px;
+    padding: 20px;
+    z-index: 2;
+    width: 50%;
+    background-color: #d7d4d3a7;
+    border-radius: 10px;
+
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    
+}-----
+
+
+
+
+.info h1 {
+    position: absolute;
+    font-size: 100px;  
+    color: #fff9f9;
+    text-shadow: 2px 2px 5px #7b6262;
 }
 
 
@@ -102,49 +139,39 @@
 }
 
 
-.info button a {
-    text-decoration: none;
-    position: relative;
-    top: 50%;
-    color: rgb(0, 0, 0); 
-    text-shadow: 2px 2px 8px solid rgb(157, 150, 150); 
-    font-size: 15px; 
-    text-align: left;
-}
 
-.Schema button a {
-    text-decoration: none;
-    position: relative;
-    top: 50%;
-    color: rgb(0, 0, 0); 
-    text-shadow: 2px 2px 8px solid rgb(157, 150, 150); 
-    font-size: 15px; 
-    text-align: left;
-}
+
+
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: rgb(0, 0, 0);
-    background-color: #ded5cc;
+    color: rgb(255, 255, 255);
+    background-color: #7b6262;
     text-shadow: #9a9a99;
 }
 
 
-.event-footer {
-    background-color: #302103;
-    padding: 40px;
+footer {
+    background-color: #000000;
+    color: rgb(212, 210, 210);
     text-align: center;
-    color: rgb(0, 0, 0);
-    border-radius: 5px;
-    display: flex;
-    background: linear-gradient(90deg, #302103, #917b6a);
-    padding: 5px 5px;
-    text-align: center;
-    color: rgba(249, 75, 124, 0.703);
-    box-shadow: #30201b;
+    padding: 20px 0;
 }
+
+.event-footer {
+    margin: 0 auto;
+    height: auto;
+    border-radius: 5px;
+    max-width: 2000px;
+}
+
+.footer-text {
+    text-align: center;
+    z-index: 2;
+}
+
 
   @media (max-width: 768px) {
     .event-header {
