@@ -140,7 +140,6 @@ header {
 }
 
 
-
 body {
     background-color: #160b01;
     
@@ -164,4 +163,95 @@ footer {
     margin-top: 20px; /* Utrymme över footern */
     border-radius: 5px;
     max-width: 2000px; 
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Meny */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Rubrik-text */
+    .rubrik-text {
+        width: 90%;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rubrik-text h1 {
+            font-size: 2.5rem; 
+            line-height: 1.2;  /* Ger Plats mellan raderna */
+            text-align: center; 
+            margin: 20px 0;    /* Utrymme ovanför och under */
+    }
+    
+    .rubrik-text h2 {
+            font-size: 1.8rem; 
+            margin: 15px 0;
+    }
+
+    .grundare {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .grundare img {
+        width: 100%;
+    }
+
+    /* Om-sektionen */
+    .Om-text {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* Media Queries för små skärmar */
+@media (max-width: 300px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .img-pic img {
+        max-width: 100%;
+        pa
+    }
+
+    .rubrik-text {
+        width: 90%;
+        top: 10%;
+        font-size: 1.5rem;
+    }
+
+    .Om-text {
+        max-width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 0.8rem;
+    }
 }
