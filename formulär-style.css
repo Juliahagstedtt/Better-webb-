@@ -1,0 +1,219 @@
+/* Header*/
+header {
+    display: flex;
+    background-color: #c2bfba;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
+    justify-content: space-between;
+    padding: 10px 0;
+    text-align: center;
+    color: rgba(249, 75, 139, 0.703);
+    box-shadow: 2px 2px 5px #30201b; 
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 100%;
+    max-width: 100px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(106, 78, 78);
+}
+ /* Meny*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+    justify-content: flex-end; /*Flyttar menyn åt slutet  */
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 13px;
+    background-color: #d2bbaac1;
+    flex: auto;
+    box-shadow: 2px 2px 5px #b28686;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-decoration: none; /*tar bort understreck */
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.menu a:hover {
+    background-color: #e9e1e1;
+
+}
+
+.menu a:active {
+    background-color: #a66f6f;
+}
+
+.menu li {
+    margin-right: 5px;
+    text-align: right;
+    text-shadow: 2px 2px 8px rgb(rgba(255, 0, 0, 0.352), rgb(255, 48, 176), rgb(245, 152, 203));
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    background-color: #7b6262;
+    text-shadow: 1px 1px 3px #9a9a99;   
+    flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
+    min-height: 100vh; 
+}
+/*-------------------------------------------------------------------------------------------------------------  */
+
+
+.f-image-container {
+    position:static;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+
+
+}
+
+.f-image-container img {
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+}
+
+.text-f-overlay {
+    position: absolute;
+    width: 400px;
+    top: 20%;
+    left: 40%;
+    background-color: #d6cecbae;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.text-f-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+form {
+    width: 110px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/*input:invalid {
+    border: 2px solid rgb(255, 23, 69);
+    background-color: #fce4e4; 
+}*/
+
+input:valid {
+    border: 2px solid rgb(141, 255, 141);
+ } 
+
+.days-box, .preference-box {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px;
+    border: 2px solid #d1adadc1;
+    background-color: #ffffffb3;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(116, 96, 102);
+}
+
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.button-link {
+    margin: 400px;
+    padding: 2px;
+    border: 2px solid rgba(164, 160, 162, 0.375);
+    color: #ffffff;
+    background-color: #d5cdcd;
+    text-shadow: 1px 1px 3px#171717;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.event-footer {
+    background-color: #000000; 
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Utrymme över footern */
+    border-radius: 5px;
+    max-width: 2000px; 
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .logo img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+
+    }
+
+    .f-image-container {
+
+    }
+
+    .text-f-overlay {
+
+    }
+
+    .preference-box {
+
+
+    }
+
+    .form-section {
+
+    }
+
+    .days-box {
+
+        
+    }
+
+
+
+
+}

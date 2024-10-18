@@ -1,0 +1,101 @@
+/* Header*/
+header {
+    display: flex;
+    background-color: #c2bfba;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
+    justify-content: space-between;
+    padding: 10px 0;
+    text-align: center;
+    color: rgba(249, 75, 139, 0.703);
+    box-shadow: 2px 2px 5px #30201b; 
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 100%;
+    max-width: 100px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(106, 78, 78);
+}
+ /* Meny*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+    justify-content: flex-end; /*Flyttar menyn åt slutet  */
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 13px;
+    background-color: #d2bbaac1;
+    flex: auto;
+    box-shadow: 2px 2px 5px #b28686;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-decoration: none; /*tar bort understreck */
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.menu a:hover {
+    background-color: #e9e1e1;
+
+}
+
+.menu a:active {
+    background-color: #a66f6f;
+}
+
+.menu li {
+    margin-right: 5px;
+    text-align: right;
+    text-shadow: 2px 2px 8px rgb(rgba(255, 0, 0, 0.352), rgb(255, 48, 176), rgb(245, 152, 203));
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    background-color: #7b6262;
+    text-shadow: 1px 1px 3px #9a9a99;   
+    flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
+    min-height: 100vh; 
+}
+/*-------------------------------------------------------------------------------------------------------------  */
+
+.container, .h1 {
+    color: #fcfaf8c1;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.event-footer {
+    background-color: #000000; 
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Utrymme över footern */
+    border-radius: 5px;
+    max-width: 2000px; 
+}
