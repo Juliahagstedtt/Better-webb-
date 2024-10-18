@@ -113,6 +113,15 @@ form {
     border-radius: 10px;
 }
 
+/*input:invalid {
+    border: 2px solid rgb(255, 23, 69);
+    background-color: #fce4e4; 
+}*/
+
+input:valid {
+    border: 2px solid rgb(141, 255, 141);
+ } 
+
 .days-box, .preference-box {
     margin-top: 30px;
     margin-left: 30px;
@@ -168,15 +177,14 @@ footer {
 
 @media (max-width: 768px) {
     .header {
-
+        flex-direction: column;
+        align-items: center;
     }
 
-    .header-pic {
 
-    }
-
-    .logo {
-
+    .logo img {
+        max-width: 80px;
+        margin-bottom: 10px;
     }
 
     .menu {
