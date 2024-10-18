@@ -1,0 +1,257 @@
+/* Header*/
+header {
+    display: flex;
+    background-color: #c2bfba;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
+    justify-content: space-between;
+    padding: 10px 0;
+    text-align: center;
+    color: rgba(249, 75, 139, 0.703);
+    box-shadow: 2px 2px 5px #30201b; 
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 100%;
+    max-width: 100px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(106, 78, 78);
+}
+ /* Meny*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+    justify-content: flex-end; /*Flyttar menyn åt slutet  */
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 13px;
+    background-color: #d2bbaac1;
+    flex: auto;
+    box-shadow: 2px 2px 5px #b28686;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-decoration: none; /*tar bort understreck */
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.menu a:hover {
+    background-color: #e9e1e1;
+
+}
+
+.menu a:active {
+    background-color: #a66f6f;
+}
+
+.menu li {
+    margin-right: 5px;
+    text-align: right;
+    text-shadow: 2px 2px 8px rgb(rgba(255, 0, 0, 0.352), rgb(255, 48, 176), rgb(245, 152, 203));
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------  */
+
+.img-pic img {
+    width: 500px;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto; /* Centrerar bilden */
+}
+
+
+.image-container-o {
+    position:static;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-container-o img {
+    width: 100%;
+    height: auto;
+}
+
+.rubrik-text {
+    position: absolute;
+    width: 300px;
+    top: 20%;
+    left: 40%;
+    margin-right: 350px;
+    margin: 5px;
+    background-color: rgba(171, 148, 148, 0.937);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.rubrik-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    
+}
+
+.grundare {
+    width: 400px;
+    margin: 50px;
+    padding: 20px;
+
+    position: sticky;
+    width: 50%;
+    height: 200px;
+}
+
+.grundare img {
+    top: -30%;
+    left: 70%;
+    width: 80%;
+    height: auto;
+    position: relative;
+
+}
+
+.Om-text {
+    border: 2px solid #fffbfc;
+    padding: 30px; 
+    border-radius: 5px;
+    background-color: rgba(187, 160, 160, 0.885);
+    box-shadow: 0 4px 8px rgb(255, 253, 253);
+    max-width: 800px;
+    margin: 50px;
+    margin-left: 350px;
+    text-shadow: 2px 2px 5px #653f61;
+    text-align: center;
+}
+
+.Om p {
+    color: #ffffff;
+}
+
+
+body {
+    background-color: #160b01;
+    
+}
+
+footer {
+    background-color: #2b2a2a;
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.event-footer {
+    background-color: #000000; 
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Utrymme över footern */
+    border-radius: 5px;
+    max-width: 2000px; 
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Meny */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Rubrik-text */
+    .rubrik-text {
+        width: 90%;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .rubrik-text h1 {
+            font-size: 2.5rem; 
+            line-height: 1.2;  /* Ger Plats mellan raderna */
+            text-align: center; 
+            margin: 20px 0;    /* Utrymme ovanför och under */
+    }
+    
+    .rubrik-text h2 {
+            font-size: 1.8rem; 
+            margin: 15px 0;
+    }
+
+    .grundare {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .grundare img {
+        width: 100%;
+    }
+
+    /* Om-sektionen */
+    .Om-text {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* Media Queries för små skärmar */
+@media (max-width: 300px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .img-pic img {
+        max-width: 100%;
+        pa
+    }
+
+    .rubrik-text {
+        width: 90%;
+        top: 10%;
+        font-size: 1.5rem;
+    }
+
+    .Om-text {
+        max-width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 0.8rem;
+    }
+}
