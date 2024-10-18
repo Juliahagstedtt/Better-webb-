@@ -79,6 +79,12 @@ header {
     text-shadow: 1px 1px 3px #000000;
 }
 
+h3 {
+    font-size: medium;
+    color: #f1e8e8;
+    text-align: center;
+}
+
 /* Bakgrunds bilden */
 .background-pic {
     position: relative;
