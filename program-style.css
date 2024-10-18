@@ -1,6 +1,240 @@
-.h2 text {
-    color: rgb(103, 99, 106);
-    text-align: end;
-    width: 5px;
-  
+/* Header*/
+header {
+    display: flex;
+    background-color: #c2bfba;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
+    justify-content: space-between;
+    padding: 10px 0;
+    text-align: center;
+    color: rgba(249, 75, 139, 0.703);
+    box-shadow: 2px 2px 5px #30201b; 
 }
+
+/* Logo */
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin-right: 100%;
+    max-width: 100px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(106, 78, 78);
+}
+ /* Meny*/
+.menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+    justify-content: flex-end; /*Flyttar menyn åt slutet  */
+    gap: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 13px;
+    background-color: #d2bbaac1;
+    flex: auto;
+    box-shadow: 2px 2px 5px #b28686;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-decoration: none; /*tar bort understreck */
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.menu a:hover {
+    background-color: #e9e1e1;
+
+}
+
+.menu a:active {
+    background-color: #a66f6f;
+}
+
+.menu li {
+    margin-right: 5px;
+    text-align: right;
+    text-shadow: 2px 2px 8px rgb(rgba(255, 0, 0, 0.352), rgb(255, 48, 176), rgb(245, 152, 203));
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    background-color: #7b6262;
+    text-shadow: 1px 1px 3px #9a9a99;   
+    flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
+    min-height: 100vh; 
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.program {
+    width: 700px;
+    margin: 30px;
+    padding: 30px;
+    flex-direction: row;
+}
+
+.section-q {
+    width: 700px;
+    top: 100%;
+    left: 10%;
+    background-color: #ffffff5c;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+}
+
+.rubrik h1 {
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+
+/* Schema */
+
+.Schema h2 {
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+}
+
+.Schema u {
+    color: #5c0f0f;
+    text-shadow: 2px 2px 4px solid rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.Schema {
+    display: flex;
+    justify-content: 20px;
+    flex-wrap: wrap;
+
+}
+
+ .Schema .Dag-1, 
+ .Schema .Dag-2,
+ .Schema .Dag-3
+ {
+    color: rgb(255, 249, 249);
+    width: calc(33.3 - 20px);
+    height: auto;
+    background: linear-gradient(90deg, rgba(205, 176, 148, 0.634), rgb(151, 120, 126));
+    border: 2px solid rgb(107, 102, 102);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px#f6f5f4c1;
+}   
+
+ .seminarie .section-a,
+ .seminarie .section-b,
+ .seminarie .section-c,
+ .seminarie .section-d,
+ .seminarie .section-e,
+ .seminarie .section-f,
+ .seminarie .section-g,
+ .seminarie .section-h,
+ .seminarie .section-i,
+ .seminarie .section-j
+
+ {
+    margin-bottom: 100px;
+    color: #111010;
+    width: 300px;
+    height: auto;
+    border: 2px solid grey;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: #c5c1c4;
+    
+}
+
+.seminarie, .pic-1 img
+.seminarie, .pic-2 img
+.seminarie, .pic-3 img
+.seminarie, .pic-4 img 
+.seminarie, .pic-5 img 
+.seminarie, .pic-6 img
+.seminarie, .pic-7 img 
+.seminarie, .pic-8 img
+.seminarie, .pic-9 img
+.seminarie, .pic-10 img {
+    width: 150px;
+    top:    20px;
+    height: 100px;
+    padding: 20px;
+    margin: 30px;
+    margin-bottom: auto;
+}
+
+.seminarie img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+footer {
+    background-color: #000000;
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.event-footer {
+    background-color: #000000; 
+    color: rgb(212, 210, 210);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Utrymme över footern */
+    border-radius: 5px;
+    max-width: 2000px; 
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .rubrik {
+
+
+    }
+
+    .Schema {
+
+
+    }
+
+
+    .program-footer {
+        padding: 20px 10px;
+    }
+       .seminarie > section {
+        flex: 0 0 calc(50% - 20px); /* Två seminarier per rad */
+    } 
+    .seminarie > section {
+        flex: 0 0 100%; /* En seminarie per rad */
+    }
+
+
+}
+
