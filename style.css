@@ -187,12 +187,17 @@ footer {
 
 .event-footer {
     background-color: #000000; 
-    color: rgb(212, 210, 210);
+    color: rgb(255, 245, 245);
     text-align: center;
     padding: 20px 0;
     margin-top: 20px; /* Utrymme över footern */
     border-radius: 5px;
     max-width: 2000px; 
+}
+
+.event-footer a {
+    background-color: #000000; 
+    color: rgb(255, 245, 245);
 }
 
 
@@ -266,3 +271,6 @@ footer {
         padding: 5px; 
     }
 }
+
+
+/* Validerat */
