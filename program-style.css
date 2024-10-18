@@ -1,5 +1,8 @@
 /* Borttagen Header */
 
+html, body {
+    height: 100%; /* Sätter höjd på html och body till 100% */
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -7,12 +10,18 @@ body {
     padding: 0;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    background-color: #7b6262;
+    background-color: #c0a5a5;
     text-shadow: 1px 1px 3px #9a9a99;   
     flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
     min-height: 100vh; 
+    display: flex;
+    top: 500px;
+    flex-direction: column;
 }
+main {
+    flex: 1;  /*Tar upp extra utrymme*/
 
+}
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .program {
@@ -25,11 +34,12 @@ body {
 .section-q {
     width: 700px;
     top: 100%;
-    left: 10%;
-    background-color: #ffffff5c;
+    left: 50%;
+    background-color: #ffffff18;
     border-radius: 10px;
     padding: 30px;
-    margin: auto;
+    margin: 20px;
+    margin-left: 300px;
 }
 
 .rubrik h1 {
@@ -44,17 +54,23 @@ body {
 .Schema h2 {
     font-size: 27px;
     color: rgb(255, 255, 255);
+    text-align: end;
 }
 
 .Schema u {
-    color: #5c0f0f;
+    color: #24052f;
     text-shadow: 2px 2px 4px solid rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.Schema h2,u {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(226, 115, 209, 0.216);
     font-size: 18px;
 }
 
 .Schema {
     display: flex;
-    justify-content: 20px;
     flex-wrap: wrap;
 
 }
@@ -63,13 +79,14 @@ body {
  .Schema .Dag-2,
  .Schema .Dag-3
  {
+    justify-content: space-between;
     color: rgb(255, 249, 249);
-    width: calc(33.3 - 20px);
-    height: auto;
-    background: linear-gradient(90deg, rgba(205, 176, 148, 0.634), rgb(151, 120, 126));
+    /* width: calc(33.3 - 20px); */
+    /* height: auto; */
+    background: linear-gradient(90deg, rgb(213, 196, 180), rgb(178, 142, 149));
     border: 2px solid rgb(107, 102, 102);
-    padding: 20px;
-    margin: 10px;
+    padding: 30px;
+    margin: 40px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px#f6f5f4c1;
 }   
@@ -83,10 +100,10 @@ body {
  .seminarie .section-g,
  .seminarie .section-h,
  .seminarie .section-i,
- .seminarie .section-j
-
- {
-    margin-bottom: 100px;
+ .seminarie .section-j {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* justify-content: space-between; */
     color: #111010;
     width: 300px;
     height: auto;
@@ -94,7 +111,7 @@ body {
     padding: 20px;
     margin: 30px;
     border-radius: 10px;
-    background-color: #c5c1c4;
+    background-color: #6c656581;
     
 }
 
@@ -110,7 +127,6 @@ body {
 .seminarie, .pic-10 img {
     width: 150px;
     top:    20px;
-    height: 100px;
     padding: 20px;
     margin: 30px;
     margin-bottom: auto;
@@ -119,7 +135,7 @@ body {
 .seminarie img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: grid;
     margin: 0 auto;
 }
 
