@@ -146,15 +146,15 @@ h3 {
 }
 
 .info a:active {
-    background-color: #ac8888;
+    background-color: #a66f6f;
 }
 
 a:link {
     color: #000000;
 }
 a:visited {
-    color: #965b76b1;
-
+    color: #eddee4;
+    text-shadow: 2px 2px 5px;
 }
 
 
