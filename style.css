@@ -29,13 +29,13 @@ header {
     padding: 0;
     justify-content: flex-end; /*Flyttar menyn åt slutet  */
     gap: 10px;
+    margin-right: 20px; /*För att menyn ska få lite luft på höger sida*/
 }
 
 .menu a {
     display: block;
     padding: 10px 13px;
     background-color: #d2bbaac1;
-    flex: auto;
     box-shadow: 2px 2px 5px #b28686;
     color: rgb(255, 255, 255);
     border-radius: 2px;
@@ -141,13 +141,24 @@ h3 {
 }
 
 .info a:hover {
-    background-color: #e9e1e1;
+    background-color: #e9e1e199;
 
 }
 
 .info a:active {
-    background-color: #a66f6f;
+    background-color: #ac8888;
 }
+
+a:link {
+    color: #000000;
+}
+a:visited {
+    color: #965b76b1;
+
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
