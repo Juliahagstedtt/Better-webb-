@@ -7,17 +7,26 @@ body {
     padding: 0;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    background-color: #7b6262;
+    background: linear-gradient(10deg, #ffffff, #bea0a0, #ffffff);
     text-shadow: 1px 1px 3px #9a9a99;   
     flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
     min-height: 100vh; 
 }
 /*-------------------------------------------------------------------------------------------------------------  */
 
-.container, .h1 {
-    color: #fcfaf8c1;
+.container {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #554c4c;
+    font-size: 1.3em;
     text-align: center;
 }
 
+h2 {
+    color: #fffefe;
+    text-shadow: 2px 2px 4px #1d1b1bcb;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
 
 /* Borttagen footer */

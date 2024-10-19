@@ -6,7 +6,7 @@ body {
     padding: 0;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    background-color: #7b6262;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
     text-shadow: 1px 1px 3px #9a9a99;   
     flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
     min-height: 100vh; 
@@ -31,46 +31,83 @@ body {
 
 .text-f-overlay {
     position: absolute;
-    width: 400px;
+    width: 300px;
     top: 20%;
-    left: 40%;
-    background-color: #d6cecbae;
-    border-radius: 10px;
+    left: 42%;
+    background-color: #d6cecb31;
+    border-radius: 20px;
     padding: 20px;
-
+    text-align: center;
 }
 
 .text-f-overlay h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 10px;
+    text-shadow: 5px 5px 10px #635f5f;
 }
+
+/* ______________________________________________________________________________Formulären__________________ */
 
 
 form {
-    width: 110px;
-    margin: 20px;
+    width: 400px;
+    margin: 20px auto;
     padding: 30px;
     border-radius: 10px;
 }
 
-/*input:invalid {
-    border: 2px solid rgb(255, 23, 69);
+
+.book-box, .preference-box {
+    margin: 20 auto; /* Centrera  */
+    width: 80%; /* Bredd */
+}
+
+
+/*_______________ Boxen runt om formulären */
+
+.book-box {
+    border: 2px solid rgba(8, 8, 8, 0.137);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 450px;
+    background: #0000003d;
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+/*_______________ Boxen runt om formulären */
+
+
+input:invalid {
+    border: 2px solid rgb(255, 94, 134);
     background-color: #fce4e4; 
-}*/
+}
 
 input:valid {
-    border: 2px solid rgb(141, 255, 141);
+    border: 2px solid rgb(2, 179, 2);
  } 
 
 .days-box, .preference-box {
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 20px;
     padding: 10px;
-    border: 2px solid #d1adadc1;
-    background-color: #ffffffb3;
-    width: 30%;
+    width: 100%;
+    border: 2px solid #575252e5;
+    background-color: #bea5a5a4;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #3f3a3e;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgb(116, 96, 102);
+    text-align: center;
+    overflow: auto;
+}
+
+.mini-rubrik {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    text-decoration: underline;
+    font-size: 1.2em;
+    font-style: italic;
 }
 
 .form-section {
@@ -79,23 +116,40 @@ input:valid {
     align-items: flex-start;
     margin-top: 20px;
     gap: 20px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+/* ______________________________________________________________________________________Formulären__________________ */
+
+/* ___________Fortsätt knapparna_____________________ */
+
+.continue-wrapper {
+    margin: 15px auto;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.continue {
+    margin: 0;
 }
 
 .button-link {
-    margin: 400px;
-    padding: 2px;
-    border: 2px solid rgba(164, 160, 162, 0.375);
+    display: inline-block;    
+    padding: 10px 10px;
     color: #ffffff;
-    background-color: #d5cdcd;
+    background-color: #7c586e3f;
     text-shadow: 1px 1px 3px#171717;
     text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
 }
 
+/* ___________Fortsätt knapparna_____________________ */
+
+
 /* Borttagen footer */
-
-
 
 @media (max-width: 768px) {
     .header {
