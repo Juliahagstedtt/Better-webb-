@@ -198,6 +198,7 @@ footer {
 .event-footer a {
     background-color: #000000; 
     color: rgb(255, 245, 245);
+    text-align: center;
 }
 
 

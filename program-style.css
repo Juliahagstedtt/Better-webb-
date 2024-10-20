@@ -1,183 +1,265 @@
-/* Borttagen Header */
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 3px black;
-    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
-    text-shadow: 1px 1px 3px #9a9a99;    
-    flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
-    min-height: 100vh; 
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgb(131, 127, 127);
+    background: linear-gradient(90deg, #b8a495, #7b6262, #2b1e06c8);
     display: flex;
-    top: 500px;
-    flex-direction: column;
+    flex-direction: column; /* Staplar elementen */
+    min-height: 100vh; 
+    background-attachment: fixed;
 }
-main {
-    flex: 1;  /*Tar upp extra utrymme*/
 
+main {
+    flex: 1;  /* Tar upp extra utrymme */
 }
-/*--------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .program {
-    width: 700px;
-    margin: 30px;
+    width: 100%; /* Ändra till 100% för att bli responsiv */
+    max-width: 700px; /* Ställ in maxbredd för större skärmar */
+    margin: 30px auto; /* Centrera */
     padding: 30px;
-    flex-direction: row;
+    display: flex; 
+    flex-direction: column; 
 }
 
 .section-q {
-    width: 700px;
-    top: 100%;
-    left: 50%;
     background-color: #ffffff18;
     border-radius: 10px;
     padding: 30px;
-    margin: 20px;
-    margin-left: 300px;
+    margin: 30px 0; /* Justera marginaler */
 }
 
 .rubrik h1 {
-    font-size: 3.5rem;
+    font-size: 4em;
     margin-bottom: 50px;
     color: white;
     text-align: center;
 }
 
-/* Schema */
+/* Schema _____________________________________*/
+.Schema {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-.Schema h2 {
+.Schema .Days {
+    color: rgb(255, 249, 249);
+    background: linear-gradient(90deg, rgba(213, 196, 180, 0.699), rgba(178, 142, 149, 0.548));
+    border: 2px solid rgb(107, 102, 102);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(222, 223, 220);
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); /* Gör det responsivt */
+    min-width: 300px; /* Ställ in minbredd */
+}
+
+.Schema h1 {
     font-size: 27px;
-    color: rgb(255, 255, 255);
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .Schema u {
     color: #24052f;
-    text-shadow: 2px 2px 4px  rgba(207, 209, 192, 0.904);
     font-size: 18px;
 }
 
-.Schema h2,u {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(226, 115, 209, 0.216);
-    font-size: 18px;
-}
-
-.Schema {
+/* Justera seminarier */
+.seminarie {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.speaker {
-    font-weight: bold;
-    color: #333;
-}
-
-.seminarie-title {
-    display: block; /* Sätter titeln på en ny rad */
-    font-style: italic;
-    color: #9db0bd;
-}
-
-.pic-2 img {
-    width: 100%;
-    max-width: 300px; /* Styr bredden på bilden */
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-
-.speaker {
-    color: rgb(255, 59, 92);
-} 
-
-.seminarie-title {
-    font-style: italic;
-    color: yellow;
-
-}
-
-
- .Schema .Days {
     justify-content: space-between;
-    color: rgb(255, 249, 249);
-    height: auto;
-    background: linear-gradient(90deg, rgba(213, 196, 180, 0.699), rgba(178, 142, 149, 0.548));
-    border: 2px solid rgb(107, 102, 102);
-    padding: 30px;
-    margin: 40px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgb(204, 207, 183);
-}   
+}
 
- .seminarie .seminarie-item {
+.seminarie .seminarie-item {
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between; 
-    color: #111010;
-    width: 300px;
-    height: auto;
-    border: 2px solid grey;
-    padding: 20px;
+    flex-direction: column; /* Ställ in för att stapla innehåll */
+    flex: 1 1 calc(30% - 20px); /* Gör det responsivt */
+    box-sizing: border-box;
     margin: 30px;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #a98caa81;
-    
+    background-color: #eeedeea9;
 }
 
-.seminarie, speaker-pic img {
-    width: 150px;
-    top:    20px;
-    padding: 20px;
-    margin: 30px;
-    margin-bottom: auto;
-}
-
-
-
-.seminarie img {
-    max-width: 100%;
-    height: auto;
-    display: grid;
-    margin: 0 auto;
-}
-
-/* Borttagen footer */
-
-
-
-
-
-
+/* Responsivhet för mindre skärmar */
 @media (max-width: 768px) {
 
-    .rubrik {
-
-
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .Schema {
-
-
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
 
+    .event-footer {
+        font-size: 1rem;
+    }
 
-    .program-footer {
+    .Schema .Days, 
+    .seminarie .seminarie-item {
+        flex: 0 0 100%; /* En box per rad */
+        margin: 10px 0;
+    }
+    
+    .program {
         padding: 20px 10px;
     }
-       .seminarie > section {
-        flex: 0 0 calc(50% - 20px); /* Två seminarier per rad */
-    } 
+
+    .rubrik h1{
+        font-size: 2.5em;
+    }
+
     .seminarie > section {
         flex: 0 0 100%; /* En seminarie per rad */
     }
+}
+
+@media (max-width: 480px) {
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menu a {
+        padding: 5px;
+        font-size: 0.8rem; /* Minska textstorleken på små skärmar */
+    }
+
+    .rubrik h1 {
+        font-size: 2em;
+    }
+
+    .Schema h1 {
+        font-size: 20px;
+    }
+
+    .Schema .Days {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Responsivhet för skärmar mindre än 300px */
+@media (max-width: 300px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
 
 
+    .rubrik h1 {
+        font-size: 1.5em;
+    }
+
+    .Schema h1 {
+        font-size: 18px;
+    }
+
+    .Schema .Days {
+        padding: 10px;
+        font-size: 0.8em;
+        margin: 5px;
+    }
+
+    .seminarie .seminarie-item {
+        margin: 15px;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .program {
+        padding: 10px;
+    }
+
+    .menu a {
+        padding: 5px; 
+    }
 }
 
 /* Validerat */
+
+
+
+/* Media queries för responsiv design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .text-overlay {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .info {
+        width: 80%; 
+        top: 50%; 
+        left: 50%; 
+    }
+
+    .event-footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay h2 {
+        font-size: 1.5rem; 
+    }
+
+    .info h2 {
+        font-size: 1.8rem; 
+    }
+
+    .info {
+        width: 95%; 
+        font-size: 1rem;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menu a {
+        padding: 5px;
+        font-size: 0.8rem; /* Minska textstorleken på små skärmar */
+    }
+}
+
+@media (max-width: 300px) {
+    .text-overlay {
+        font-size: 1.2rem; /* Textstorlek för små skärmar */
+        padding: 5px; /* Minska padding */
+    }
+
+    .info {
+        font-size: 1rem; 
+    }
+
+    .menu a {
+        padding: 5px; 
+    }
+}
