@@ -1,18 +1,13 @@
-/* Bortagen Header */
-
-/*-------------------------------------------------------------------------------------------------------------  */
-
-.img-pic img {
-    width: 500px;
-    height: auto;
-    max-width: 500px;
-    display: block;
-    margin: 0 auto; /* Centrerar bilden */
+/* Globala stilar */
+body {
+    background-color: #160b01;
+    margin: 0; /* Ta bort standardmarginaler */
+    padding: 0; /* Ta bort standardpaddingar */
 }
 
-
+/* .image-container-o */
 .image-container-o {
-    position:static;
+    position: relative; /* Ändrat till relative för att fungera bra med absolut positionerade element */
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -21,47 +16,45 @@
 .image-container-o img {
     width: 100%;
     height: auto;
+    display: block; /* Gör att bilden inte får extra utrymme */
 }
 
+/* Rubrik-text */
 .rubrik-text {
     position: absolute;
-    width: 300px;
+    width: 90%; /* Ändrat till 90% för bättre responsivitet */
     top: 20%;
-    left: 40%;
-    margin-right: 350px;
+    left: 50%;
+    transform: translateX(-50%); /* Centrera rubrik-texten */
     margin: 5px;
     background-color: rgba(171, 148, 148, 0.937);
     border-radius: 10px;
     padding: 20px;
-
+    text-align: center; /* Centrera textinnehållet */
 }
 
 .rubrik-text h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #ffffff;
-    
 }
 
+/* Grundare */
 .grundare {
-    width: 400px;
-    margin: 50px;
+    width: 100%; /* Gör den responsiv */
+    max-width: 400px; /* Sätter ett maxvärde för att undvika att bli för stor */
+    margin: 50px auto; /* Centrera elementet */
     padding: 20px;
-
-    position: sticky;
-    width: 50%;
-    height: 200px;
+    position: relative; /* Ställ in positionen till relativ */
 }
 
 .grundare img {
-    top: -30%;
-    left: 70%;
-    width: 80%;
+    width: 100%; /* Gör bilden responsiv */
     height: auto;
-    position: relative;
-
+    display: block; /* Tar bort extra utrymme */
 }
 
+/* Om-text */
 .Om-text {
     border: 2px solid #fffbfc;
     padding: 30px; 
@@ -69,190 +62,66 @@
     background-color: rgba(187, 160, 160, 0.885);
     box-shadow: 0 4px 8px rgb(255, 253, 253);
     max-width: 800px;
-    margin: 50px;
-    margin-left: 350px;
+    margin: 50px auto; /* Centrera om-texten */
     text-shadow: 2px 2px 5px #653f61;
     text-align: center;
+    font-size: 1.7em;
 }
 
 .Om p {
     color: #ffffff;
 }
 
-
-body {
-    background-color: #160b01;
-    
+/* Feedback */
+.feedback {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto; /* Centrera feedback-sektionen */
+    color: #24052f;
+    max-width: 600px; /* Sätt en maxbredd för feedback-sektionen */
 }
 
-/* Borttagen footer */
-
-
-@media (max-width: 768px) {
-    /* Header */
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    /* Meny */
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    /* Rubrik-text */
-    .rubrik-text {
-        width: 90%;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .rubrik-text h1 {
-            font-size: 2.5rem; 
-            line-height: 1.2;  /* Ger Plats mellan raderna */
-            text-align: center; 
-            margin: 20px 0;    /* Utrymme ovanför och under */
-    }
-    
-    .rubrik-text h2 {
-            font-size: 1.8rem; 
-            margin: 15px 0;
-    }
-
-    .grundare {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-    }
-
-    .grundare img {
-        width: 100%;
-    }
-
-    /* Om-sektionen */
-    .Om-text {
-        max-width: 90%;
-        margin: 20px auto;
-    }
+.feedback h2 {
+    color: #000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; /* Centrera rubriken i feedback */
 }
 
-/* Media Queries för små skärmar */
-@media (max-width: 300px) {
-    header {
-        flex-direction: column;
-    }
+/* Formulärstilar */
+.feedback label {
+    display: block;
+    margin: 10px 0 5px;
+}
 
-    .menu {
-        flex-direction: column;
-        gap: 2px;
-    }
+.feedback input,
+.feedback textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px auto; /* Centrera fälten */
+    display: block; /* Gör att input fälten fyller bredden */
+}
 
-    .menu a {
-        padding: 8px;
-        font-size: 0.9rem;
-    }
-
-    .img-pic img {
-        max-width: 100%;
-        pa
-    }
-
-    .rubrik-text {
-        width: 90%;
-        top: 10%;
-        font-size: 1.5rem;
-    }
-
-    .Om-text {
-        max-width: 100%;
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-    footer {
-        padding: 10px 0;
-        font-size: 0.8rem;
-    }
+.feedback button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(63, 0, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Centrera knappen */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
 
 
+/* Validerat */
 
-
-
-/* Media queries för responsiv design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .text-overlay {
-        width: 90%;
-        margin: 0 auto;
-        font-size: 2rem;
-        padding: 10px;
-    }
-
-    .info {
-        width: 80%; 
-        top: 50%; 
-        left: 50%; 
-    }
-
-    .event-footer {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .text-overlay h2 {
-        font-size: 1.5rem; 
-    }
-
-    .info h2 {
-        font-size: 1.8rem; 
-    }
-
-    .info {
-        width: 95%; 
-        font-size: 1rem;
-    }
-
-    .menu {
-        gap: 5px;
-    }
-
-    .menu a {
-        padding: 5px;
-        font-size: 0.8rem; /* Minska textstorleken på små skärmar */
-    }
-}
-
-@media (max-width: 300px) {
-    .text-overlay {
-        font-size: 1.2rem; /* Textstorlek för små skärmar */
-        padding: 5px; /* Minska padding */
-    }
-
-    .info {
-        font-size: 1rem; 
-    }
-
-    .menu a {
-        padding: 5px; 
-    }
-}
+/* Klart */

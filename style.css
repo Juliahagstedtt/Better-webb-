@@ -1,3 +1,6 @@
+
+
+
 /* Header*/
 header {
     display: flex;
@@ -44,13 +47,15 @@ header {
     transition: background-color 0.4s ease;
 }
 
+
+
 .menu a:hover {
-    background-color: #e9e1e1;
+    background-color: #4f4141;
 
 }
 
 .menu a:active {
-    background-color: #a66f6f;
+    background-color: #b6a6a6;
 }
 
 
@@ -165,7 +170,7 @@ body {
     padding: 0;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px black;
-    background-color: #7b6262;
+    background: linear-gradient(90deg, #2b1e06c8, #7b6262, #b8a495);
     text-shadow: 1px 1px 3px #9a9a99;   
     flex-direction: column; /* Staplar elementen, råkade ta bort den och allt flöt huller om buller */
     min-height: 100vh; 
@@ -174,6 +179,80 @@ body {
 main {
     flex: 1;
 }
+
+
+/* Feedback */
+.feedback {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px auto; /* Centrera feedback-sektionen */
+    color: #24052f;
+    max-width: 600px; /* Sätt en maxbredd för feedback-sektionen */
+}
+
+.feedback h2 {
+    color: #000;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; /* Centrera rubriken i feedback */
+}
+
+/* Formulärstilar */
+.feedback label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.feedback input,
+.feedback textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px auto; /* Centrera fälten */
+    display: block; /* Gör att input fälten fyller bredden */
+}
+
+.feedback button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(63, 0, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Centrera knappen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* ______________________________________________ */
+
+
+
+/* Tack meddelande Feedback */
+
+.feedback-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #b8a495;
+    color: #24052f;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.show-message .feedback-message {
+    display: block;
+}
+
+/* Tack meddelande Feedback */
+
 
 footer {
     background-color: #000000;
@@ -270,6 +349,109 @@ footer {
 
     .menu a {
         padding: 5px; 
+    }
+}
+
+/* Validerat */
+
+element-selector {
+    display: none; /* Döljer sido elementet som dyker upp i responsiv */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* Meny */
+    .menu {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 5px !important;
+    }
+
+    .rubrik-text {
+        top: 10%; /* Justera för mindre skärmar */
+    }
+
+    .rubrik-text h2 {
+        font-size: 1.8rem; 
+        margin: 15px 0;
+    }
+
+    .grundare {
+        width: 90%;
+        max-width: none; /* Ta bort max-width för att ge mer utrymme */
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    /* Om-sektionen */
+    .Om-text {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .rubrik-text h2 {
+        font-size: 1.5rem; 
+    }
+
+    .grundare img {
+        width: 100%;
+    }
+
+    .Om-text {
+        max-width: 95%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .rubrik-text {
+        font-size: 1.5rem;
+    }
+
+    .feedback {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .feedback input, .feedback textarea {
+        width: 100%;
+    }
+
+    .menu a {
+        padding: 5px !important; 
+        font-size: 0.8rem !important;
+    }
+
+    footer {
+        padding: 10px 0 !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 300px) {
+    .text-overlay {
+        font-size: 1.2rem; /* Textstorlek för små skärmar */
+        padding: 5px; /* Minska padding */
+    }
+
+    .info {
+        font-size: 1rem; 
+    }
+
+    .menu a {
+        padding: 5px; 
+        font-size: 0.7rem; 
     }
 }
 

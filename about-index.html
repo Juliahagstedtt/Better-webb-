@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
         <meta charset="UTF-8"> 
-        <meta name="viewport" content="wght=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Om</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="about-style.css">
 
-       
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -30,24 +28,15 @@
             </ul>
         </nav>
     </header>
-
-    
     <main>
-    <section class="rubrik">
-        <div class="rubrik-text">
-            <h2>Om Better-webb </h2>
+
+        <div class="Om-text">
+            <h2 class="om-rubrik">Om Oss</h2>
+            <p>Information om vår verksamhet:</p>
         </div>
-
-        <div class="image-container-o">
-            <img src="företag.jpg" alt="Bild från tidigare konferans, alla talare är uppe på scenen.">
-        </div>
-
-
-
-    </section>
 
     <article class="Om-text">
-        <nav class="Om">
+        <div class="Om">
             <h2>Välkommen till Bättre Webb</h2>
             <h3>Om Bättre Webb:</h3>
             <div class="grundare">
@@ -56,12 +45,32 @@
             <p>Bättre Webb grundades av en grupp passionerade frontendutvecklare som länge har arbetat inom IT-branschen. Med tiden insåg de att det fanns ett stort behov av att skapa en plattform där utvecklare kunde samlas, dela erfarenheter och lära sig av varandra.</p> 
             <p>Detta ledde till beslutet att omvandla företaget till en konferensarrangör med fokus på den ständigt föränderliga webbteknologin och utvecklingen.</p>                      
             <p>Sedan starten har "Bättre webb" blivit en ledande konferens för frontendutvecklare, och vi är stolta över att erbjuda en unik möjlighet att nätverka med branschkollegor, delta i inspirerande seminarier och utforska de senaste trenderna och verktygen inom webbutveckling.</p>
-            <p>Konferensen hålls årligen i Göteborg och erbjuder deltagarna chansen att välja mellan olika seminarier som täcker allt från grundläggande tekniker till avancerade metoder och bästa praxis.</p>
-            <p> Vårt mål är att ge deltagarna en meningsfull upplevelse som stärker deras kunskaper, inspirerar och bygger gemenskap inom utvecklar kulturen.</p>
-            <p>Välkommen till "Bättre webb" – där innovation och samarbeten förenas för att skapa en bättre webb för alla.</p>
+            <p>Konferensen hålls årligen i Göteborg, en full upplevelse som stärker kunskaper, inspirerar och bygger gemenskap inom utvecklar kulturen.</p>
+            <p>Välkommen till "Bättre webb" – där g och erbjuder deltagarna chansen att välja mellan olika seminarier som täcker allt från grundläggande tekniker till avancerade metoder och bästa praxis.</p>
+            <p> Vårt mål är att ge deltagarna en minnovation och samarbeten förenas för att skapa en bättre webb för alla.</p>
         
-        </nav>
+        </div>
     </article>
+
+    <section class="feedback">
+        <h2>Ge oss feedback</h2>
+        <form action="#" method="post">
+            <label for="name">Ditt namn:</label>
+            <input type="text" id="name" name="name" placeholder="För och efternamn" required>
+
+            <label for="email">Din E-post:</label>
+            <input type="email" id="email" name="email" placeholder="Skriv din e-postadress:" required>
+
+            <label for="message">Din feedback:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Skriv här!" required></textarea>
+        
+            <button type="submit">Skicka feedback!</button>
+        </form>
+
+        <div class="feedback-message">
+            <p>Tack för din feedback! Vi uppskattar ditt bidrag.</p>
+        </div>
+    </section>
 </main>
 
 <footer class="event-footer">  
@@ -73,3 +82,7 @@
  </footer>
 </body>
 </html>
+
+<!-- Validerad -->
+
+<!-- Klart -->

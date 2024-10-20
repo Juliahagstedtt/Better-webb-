@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bokning </title>
+    <title>Bokning</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="formulär-style.css">
+    <link rel="stylesheet" href="korg-index.html">
 </head>
 
 <body>
@@ -32,82 +32,85 @@
         <div class="text-f-overlay">
             <h2>Boka här: </h2>
         </div>        
+        <div class="betalning">
+            <h3>OBS! Betalning sker på plats vid incheckning!</h3>
+        </div>
     </article>
 
-
-<form action="bokning" method="post">
+    <form action="bokning" method="post">
         <section class="book-box form-box">
             <h2>Bokning:</h2>
-            <label for="name">Namn: *</label><br>
+            <label>Namn: *</label><br>
             <input type="text" id="name" name="name" placeholder="För- och efternamn" required><br>
 
-            <label for="birthday">Födelsedatum: *</label><br>
-            <input type="number" id="birthday" name="birthday" placeholder="ÅÅÅÅ-MM-DD" required><br>
+            <label>Födelsedatum: *</label><br>
+            <input type="date" id="birthday" name="birthday" required><br>
 
-            <label for="adress">Adress: *</label><br>
+            <label>Adress: *</label><br>
             <input type="text" id="adress" name="adress" placeholder="Gatuadress, t.ex Berggatan 89" required><br>
 
-            <label for="post">Postkod: *</label><br>
-            <input type="number" id="post" name="Post" placeholder="Postkod (3-5 siffror)" required><br>
+            <label>Postkod: *</label><br>
+            <input type="text" id="post" name="post" placeholder="Postkod (3-5 siffror)" required pattern="\d{3,5}"><br>
 
-            <label for="number">Mobil: *</label><br>
-            <input type="number" id="number" name="number" placeholder="t.ex 0701234567" required><br>        
-        
-            <label for="e-mail">Email: *</label><br>
+            <label>Mobil: *</label><br>
+            <input type="tel" id="number" name="number" placeholder="t.ex 0701234567" required><br>        
+
+            <label>Email: *</label><br>
             <input type="email" id="e-mail" name="e-mail" placeholder="Din e-postadress" required><br>
 
             <div class="continue-wrapper">
-                <div class="continue">
-                    <a href="#next-step" class="button-link">Fortsätt</a>
-                </div>
+                <a href="#next-step" class="btn">Fortsätt</a>
             </div>
-            <br>
-</form>
-        
-         <section id="next-step">
-            <section class="form-section">
-                <div class="preference-box">    
+            <br>        
+
+            <section id="next-step">
                 <h2>Säkra din plats:</h2>
-                <div class="mini-rubrik">
-                    <label for="days">18 - 20 Oktober:</label><br>
-                </div>
-                    <br><input type="radio" id="hela-konferensen" name="dagar" value="hela-konferensen">
-                    <label type="hela-konferensen">Hela konferensen (18-20)</label>
-                <div class="mini-rubrik">
-                    <p>Välj dagspass här:</p>
-                </div>
-                <input type="checkbox" id="18 Oktober" name="options[]" value="18 Oktober" required> 18 Okt<br>
-                <input type="checkbox" id="19 Oktober" name="options[]" value="19 Oktober" required> 19 Okt<br>
-                <input type="checkbox" id="20 Oktober" name="options[]" value="20 Oktober" readonly> 20 Okt<br>
-            
+                <div class="preference-box">    
+                    <div class="mini-rubrik">
+                        <label>Välj dagar:</label><br>
+                    </div>
+                    <fieldset>                        
+                        <legend>Kryssa i här om du vill delta under hela konferensen</legend>
+                        <input type="radio" id="hela-konferensen" name="dagar" value="hela-konferensen">
+                        <label for="hela-konferensen">Hela konferensen (18-20)</label><br>
+                    </fieldset>     
+                    <fieldset>
+                        <legend>Välj dagspass om du bara deltar vissa dagar:</legend>
+                        <input type="checkbox" id="18-Oktober" name="options[]" value="18 Oktober">
+                        <label for="18-Oktober">18 Okt</label><br>
+                        <input type="checkbox" id="19-Oktober" name="options[]" value="19 Oktober">
+                        <label for="19-Oktober">19 Okt</label><br>
+                        <input type="checkbox" id="20-Oktober" name="options[]" value="20 Oktober">
+                        <label for="20-Oktober">20 Okt</label><br>
+                    </fieldset>
 
-                       
+                    <br>
+                    <h2>Måltids alternativ:</h2>
+                    <div class="mini-rubrik">
+                        <label>Val av måltid:</label><br>
+                    </div>
+                    <input type="checkbox" id="Kött" name="meal-preference[]" value="Kött">
+                    <label for="Kött">Kött</label><br>
+                    <input type="checkbox" id="Fisk" name="meal-preference[]" value="Fisk">
+                    <label for="Fisk">Fisk</label><br>
+                    <input type="checkbox" id="Vegt" name="meal-preference[]" value="Vegt">
+                    <label for="Vegt">Vegt</label><br>
+                    <br>
 
-                <br>
-                <h2>Måltids alternativ:</h2>
-                <div class="mini-rubrik">
-                    <label for="preference">Val av måltid: </label><br>
-                </div>
-
-                <br><input type="checkbox" id="Kött" name="options[]" value="Kött">kött<br>
-                <input type="checkbox" id="Fisk" name="options[]" value="Fisk">Fisk<br>
-                <input type="checkbox" id="Vegt" name="options[]" value="Vegt">Vegt<br>
-                <br>
-
-                <div class="mini-rubrik">
-                    <label for="allergies">Önskemål och allergis: </label><br>
-                <div class="mini-rubrik">
-                    <br><textarea id="allergies" name="allergis" rows="4" cols="40" placeholder="Skriv allergener här t.ex spannmål.."></textarea> <br>
-
-                <div class="continue-wrapper">
-                    <div class="continue">
-                        <a href="korg-index.html" class="button-link">Fortsätt</a>
-                    </div>             
-                </div>
-
+                    <div class="mini-rubrik">
+                        <label>Önskemål och allergier:</label><br>
+                        <textarea id="allergies" name="allergies" rows="4" cols="30" placeholder="Skriv allergener här t.ex spannmål.."></textarea> <br>
+                    </div>
                 </div>
             </section>
         </section>
+
+        <div class="continue-wrapper">
+            <a href="korg-index.html" class="btn">Boka</a> 
+        </div>
+        
+        
+    </form>
 </main>
 
 <footer class="event-footer">  
@@ -119,3 +122,5 @@
 </footer>
 </body>
 </html>
+
+<!-- Validerad -->

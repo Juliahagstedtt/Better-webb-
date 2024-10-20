@@ -7,10 +7,9 @@
          <link rel="stylesheet" href="style.css">
          <link rel="stylesheet" href="program-style.css">
         
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
 
     </head>
 <body>
@@ -27,6 +26,7 @@
             </ul>
         </nav>
     </header>
+    <!-- checka menyn -->
 
 
     <main class="program">
@@ -39,24 +39,24 @@
              <h1>Schema:</h1>
                 <section class="Days">
                     <h2>Dag 1 <u>18 Oktober</u></h2>
-                    <p><u>Seminarie 1</u>: Clas Andersson - AI 5.0 </p>
-                    <p><u>Seminarie 2</u>: Johanna Eriksson - Frontend idag </p>
-                    <p><u>Seminarie 3</u>: August Grönberg - Integration mellan Frontend och Backend </p>
+                    <p><u>Seminarie 1 - Kl: 09:00 - 10:30 </u> Clas Andersson - AI 5.0 </p>
+                    <p><u>Seminarie 2 - Kl: 11:00 - 12:30 </u> Johanna Eriksson - Frontend idag </p>
+                    <p><u>Seminarie 3 - Kl: 13:30 - 15:00 </u> August Grönberg - Integration mellan Frontend och Backend </p>
                 </section>
                 
                 <section class="Days">
                     <h2>Dag 2 <u>19 Oktober</u></h2>
-                    <p><u>Seminarie 4</u>: Johan Berglund - Tillgänglighetsanpassad Webbutveckling </p>
-                    <p><u>Seminarie 5</u>: Josef Kovic - Formulärdesign och Validering i HTML5 </p>
-                    <p><u>Seminarie 6</u>: Martina Sjöberg - Modern CSS: Grid Layouts och Flexbox i Praktiken </p>
-                    <p><u>Seminarie 7</u>: Oscar Lindberg - Responsiv <br> Webbdesign 2024: Nya Metoder och Verktyg </p>
+                    <p><u>Seminarie 4 - Kl: 09:00 - 10:30 </u> Johan Berglund - Tillgänglighetsanpassad Webbutveckling </p>
+                    <p><u>Seminarie 5 - Kl: 11:00 - 12:30 </u> Josef Kovic - Formulärdesign och Validering i HTML5 </p>
+                    <p><u>Seminarie 6 - Kl: 13:30 - 15:00 </u>  Martina Sjöberg - Modern CSS: Grid Layouts och Flexbox i Praktiken </p>
+                    <p><u>Seminarie 7 - Kl: 15:30 - 17:00 </u>  Oscar Lindberg - Responsiv <br> Webbdesign 2024: Nya Metoder och Verktyg </p>
                 </section>
 
                 <section class="Days">
                     <h2>Dag 3 <u>20 Oktober</u></h2>
-                    <p><u>Seminarie 8</u>: Victoria Holm - CSS Animationer och Övergångar </p>
-                    <p><u>Seminarie 9</u>: Nina Gustavsson - Designsystem och Återanvändbara Komponenter i CSS </p>
-                    <p><u>Seminarie 10</u>: Daniel Nilsson - Framtidens Webbstyling med CSS Variabler </p>
+                    <p><u>Seminarie 8 - Kl: 09:00 - 10:30 </u> Victoria Holm - CSS Animationer och Övergångar </p>
+                    <p><u>Seminarie 9 - Kl: 11:00 - 12:30 </u> Nina Gustavsson - Designsystem och Återanvändbara Komponenter i CSS </p>
+                    <p><u>Seminarie 10 - Kl: 13:30 - 15:00 </u> Daniel Nilsson - Framtidens Webbstyling med CSS Variabler </p>
                 </section>
 
                 <br>
@@ -201,6 +201,28 @@
                     <img src="DanielNilsson10.jpg" alt="Man med ljust, lockigt hår">
                 </div>
             </section>
+        </section>
+
+
+
+        <section class="feedback">
+            <h2>Ge oss feedback</h2>
+            <form action="#" method="post">
+                <label for="name">Ditt namn:</label>
+                <input type="text" id="name" name="name" placeholder="För och efternamn" required>
+    
+                <label for="email">Din E-post:</label>
+                <input type="email" id="email" name="email" placeholder="Skriv din e-postadress:" required>
+    
+                <label for="message">Din feedback:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Skriv här!" required></textarea>
+            
+                <button type="submit">Skicka feedback!</button>
+            </form>
+    
+            <div class="feedback-message">
+                <p>Tack för din feedback! Vi uppskattar ditt bidrag.</p>
+            </div>
         </section>
     </main>
 
